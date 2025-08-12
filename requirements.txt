@@ -1,6 +1,5 @@
 Flask
 basic-pitch[tf]
-librosa
 numpy
 werkzeug
 gunicorn
