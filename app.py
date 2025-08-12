@@ -128,9 +128,10 @@ def convert_audio():
             )
             
         except Exception as conversion_error:
-            print(f"❌ 변환 실패: {str(conversion_error)}")
-            print(f"📋 상세 오류: {traceback.format_exc()}")
-            print(error_trace)
+            error_msg = str(conversion_error)
+            error_trace = traceback.format_exc()
+            print(f"❌ 변환 실패: {error_msg}")
+            print(f"📋 상세 오류: {error_trace}")
             
             # 더 구체적인 에러 정보 제공
             if "memory" in error_msg.lower():
