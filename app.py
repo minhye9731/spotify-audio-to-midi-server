@@ -106,7 +106,8 @@ def convert_audio():
             midi_data.write(midi_buffer)
             midi_buffer.seek(0)
             
-            print(f"🎹 MIDI 파일 크기: {len(midi_buffer.getvalue())} bytes")
+            midi_size = len(midi_buffer.getvalue())
+            print(f"🎹 MIDI 파일 크기: {midi_size} bytes")
 
             if midi_size == 0:
                 print("❌ MIDI 파일이 비어있음")
