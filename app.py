@@ -1,4 +1,5 @@
 from flask import Flask, request, send_file, jsonify
+from flask_cors import CORS
 from basic_pitch.inference import predict, Model
 from basic_pitch import ICASSP_2022_MODEL_PATH
 import tempfile
@@ -8,6 +9,7 @@ import traceback
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
+CORS(app)
 
 # 모델을 서버 시작 시 한 번만 로드
 print("🤖 Basic Pitch 모델 로딩 중...")
