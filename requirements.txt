@@ -1,7 +1,7 @@
-Flask==3.0.0
-basic-pitch==0.2.5
-tensorflow==2.14.0
-librosa==0.10.1
-numpy>=1.21.0,<2.0
-werkzeug==3.0.1
-gunicorn==21.2.0
+Flask
+basic-pitch
+tensorflow
+librosa
+numpy
+werkzeug
+gunicorn
